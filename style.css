@@ -1,0 +1,329 @@
+@import url("./reset.css");
+.aki{
+text-align: center;
+color:#f5be48;
+font-family: "Kenia", sans-serif;
+font-size: 80px;
+font-style: normal;
+margin-top: 3rem;
+}
+.akisen{
+    color:#f5be48;
+    font-family: "Kenia", sans-serif;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size:15px;
+}
+.header01 {
+    padding: 16px 24px;
+    background-color: #bda393;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header01-logo {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #bda393;
+    font-family: "kenia", sans-serif;
+  }
+  .header01-item{
+    background-color: #bda393;
+    font-family: "kenia", sans-serif;
+  }
+  
+  .header01-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 16px;
+    font-family: "kenia", sans-serif;
+  }
+  
+  .header01-item--contact {
+    background-color: #734e30;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-family: "kenia", sans-serif;
+  }
+*,body,ul {
+    margin:0;
+    padding:0;
+}
+li{
+    list-style: none;
+}
+.slide-wrapper{
+    width:100%;
+    height:300px;
+    position:relative;
+    overflow:hidden;
+}
+.slide { /*スライド全体 */
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition: all 0.6s;
+  }
+  .slide img{
+    width:auto;
+    height: auto;
+    object-fit:cover;
+
+  }
+  .slide div { /* スライド */
+    width: 33.33%;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .slide1 { /* スライドさせるために必要なクラス */
+    transform: translateX(0);
+  }
+  .slide2 { /* スライドさせるために必要なクラス */
+    transform: translateX(-33.33%);
+  }
+  .slide3 { /* スライドさせるために必要なクラス */
+    transform: translateX(-66.66%);
+  }
+  .slide div:nth-of-type(1){ /* 背景色 */
+    background-color: #f0fff0;
+  }
+  .slide div:nth-of-type(2){ /* 背景色 */
+    background-color: #f0fff0;
+  }
+  .slide div:nth-of-type(3){ /* 背景色 */
+    background-color: #f0fff0;
+  }
+  /* ↓ 左右のボタン */
+  .next {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 10px;
+    bottom: 50%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: solid 3px #000;
+    border-right: solid 3px #000;
+    -webkit-transform: rotate(45deg) translateY(50%);
+    transform: rotate(45deg) translateY(50%);
+  }
+  .prev {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 25px;
+    bottom: 50%;
+    z-index: 10;
+    cursor: pointer;
+    border-top: solid 3px #000;
+    border-right: solid 3px #000;
+    -webkit-transform: rotate(-135deg) translateY(-50%);
+    transform: rotate(-135deg) translateY(-50%);
+  }
+  .indicator {
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    column-gap: 18px;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+  }
+  .indicator li {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    list-style: none;
+    background-color: #fff;
+    border: 2px #000 solid;
+    cursor: pointer;
+  }
+  .indicator li:first-of-type {
+    background-color: #000;
+  }
+  
+body{
+    background-color: #f0fff0;
+}
+
+.daimei{
+    color: #00552e;
+        font-family: "Kenia", sans-serif;
+        font-size: 80px;
+        font-style: normal;
+        text-align: center;
+        margin: 50px;
+      }
+      
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.kari{
+    width: 25%;
+}
+
+.karisya{
+    height: auto;
+    width: 100%;
+    border-radius: 60px;
+}
+.ranking-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    color:#734e30;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.child-ko1{
+    margin: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fef9fb;
+    padding: 35px;
+    border-radius: 15px;
+    border: 3px ridge #bda393;
+}
+.child-ko2{margin: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fef9fb;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px ridge #bda393;
+}
+.child-ko3{margin: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fef9fb;
+    padding: 30px;
+    border-radius: 15px;
+    border: 3px ridge #bda393;
+}
+.Profile{
+    font-size: 20px;
+}
+.midashi{
+    color:#F36E0E;
+    font-size: 70px;
+    font-family: "Kenia", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    margin-top:40px;
+      }
+.setumei{
+    color:#F36E0E;
+    font-size: 15px;
+    font-family: "Kenia", sans-serif;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.hako{
+    display: flex;
+    justify-content:space-between;
+}
+
+.ran{
+    list-style-type: disc;
+    list-style-position: inside;
+    background-color: #fef9fb;
+}
+li{background-color: #fef9fb;
+}
+.kamesya{
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+
+.kamesya2{
+    
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    margin-right: 300px;
+    animation: slide 6s infinite ease-in-out;
+    animation-delay: 0s;
+}
+.kamesya3{
+    
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    margin-left: 250px;
+    animation: slide 6s infinite ease-in-out;
+    animation-delay: 2s;
+}
+.kamesya4{
+ 
+    width:300px;
+    height:300px;
+    border-radius:50%;
+    margin-right: 300px;
+    animation: slide 6s infinite ease-in-out;
+    animation-delay: 4s;
+}
+
+
+.days{
+    color:#734e30;
+    font-size: 70px;
+    font-family: "Kenia", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:center;
+    margin-top:40px;
+}
+.t{
+background-color: #bda393;
+}
+.footer02 {
+    color: #734e30;
+    background: #bda393;
+    text-align: center;
+    padding: 30px;
+   }
+   .footer02 a {
+    color: #734e30;
+    text-decoration: none;
+   }
+   .footer02 a:hover {
+    text-decoration: underline;
+   }
+   .footer02 .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   .footer02 .menu li {
+    margin: 0;
+    padding: 0 20px;
+   }
+   .footer02 .copyright {
+    margin: 0;
+    padding: 20px 0 0 0;
+    background-color: #bda393;
+   }
